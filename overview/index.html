@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Overview - MCS Addon Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Overview";
+    var mkdocs_page_input_path = "overview.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> MCS Addon Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Overview</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#general-information">General information</a></li>
+    
+
+    <li class="toctree-l2"><a href="#video-instructions">Video Instructions</a></li>
+    
+
+    <li class="toctree-l2"><a href="#ui-review">UI Review</a></li>
+    
+
+    <li class="toctree-l2"><a href="#quick-instruction">Quick instruction</a></li>
+    
+
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">MCS Addon Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Overview</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="general-information">General information</h2>
+<ul>
+<li>This is <strong>WORKABLE</strong> addon but <strong>WITHOUT</strong> poka-yoke!<br></li>
+<li>Imported camera's and image's names <strong>MUST</strong> be same accordingly. For example if background image has name
+  <strong>"camera_001.jpg"</strong>, camera name in scene must be the same but without extension - <strong>"camera_001"</strong>.<br></li>
+</ul>
+<h2 id="video-instructions">Video Instructions</h2>
+<p><iframe width="630" height="360" src="https://www.youtube.com/embed/o5aqBoVxViw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<h2 id="ui-review">UI Review</h2>
+<p><img alt="" src="../img/panel_w_n.png" /></p>
+<ol>
+<li>MCS list.</li>
+<li><img alt="" src="../img/plus.png" /> button adds selected cameras into MCS list, <img alt="" src="../img/minus.png" /> - deletes selected camera in MCS list camera.</li>
+<li>Check box is to load images from disk always. Useful to update images if they changed in folder.</li>
+<li>String field and button to set image folder path.</li>
+<li>Add all cameras in scene to MCS list</li>
+<li>Select camera in scene highlighted in MCS list.</li>
+<li>Clear MCS list.</li>
+<li>Indicates name of current active camera in viewport. When pressed - select the camera in scene.</li>
+<li>Enable view navigation within the camera view.</li>
+<li>Set previous camera in MCS list to viewport.</li>
+<li>Set next camera in MCS list to viewport.</li>
+<li>Set selected in MCS list camera to viewport.</li>
+<li>Delete current active camera in viewport from MCS list.</li>
+<li>Adjust near clipping camera distance(in meters).</li>
+<li>Adjust far clipping camera distance(in meters).</li>
+<li>Set the clipping camera distances.</li>
+<li>Fix fbx camera import wrong direction. Select cameras in scene and press the button.</li>
+</ol>
+<h2 id="quick-instruction">Quick instruction</h2>
+<ul>
+<li>Import fbx/alembic file with cameras into Blender scene.<br></li>
+<li><strong>Check</strong> the camera names and background images names in folder. They must be the same.<br></li>
+<li>Click on <strong>MCS tab</strong> in N button panel.<br></li>
+<li>Press <strong>"Add All Scene Cameras to List"</strong> button. It's load all cameras into MCS camera list.<br></li>
+<li>Press <img alt="" src="../img/icon.png" /> button to select folder with background images. <strong>DO not select files in the folder</strong>.</li>
+<li>Just start pressing <img alt="" src="../img/prev_b.png" /> or <img alt="" src="../img/next_b.png" /> buttons to switch cameras in viewport. Background images will load <strong>automatically</strong>.</li>
+<li>To assign shortcuts for <strong>Prev Cam</strong> and <strong>Nest Cam</strong> buttons use '<strong>mcs_addon.prev_in_list</strong>' and '<strong>mcs_addon.next_in_list</strong>' addon's operators</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
